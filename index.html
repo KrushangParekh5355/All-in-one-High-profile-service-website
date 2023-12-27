@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>All In One Service</title>
+    </head>
+    <body>
+
+        <!--Company name-->
+        <header class="companyname">
+            <button onclick="openTab('home')" class="company-button">
+                <h1>All In One Services</h1>
+            </button>
+        </header>
+        
+        <!--Creating Taskbar-->
+        <div class="taskbar">
+            <button onclick="openTab('home')">Home</button>
+            <button onclick="openTab('services')">Services</button>
+            <!--<div class="dropdown">
+               <button class="dropbtn" onmouseover="showDropdown()">Services</button>
+                <div class="dropdown" onmouseleave="hideDropdown()">
+                <button class="dropbtn" onclick="toggleDropdown()">Services</button>
+                <div class="dropdown-content" id="servicesDropdown">
+                    <a href="#" onclick="openSubTab('service1')">Service 1</a>
+                    <a href="#" onclick="openSubTab('service2')">Service 2</a>
+                    <a href="#" onclick="openSubTab('service3')">Service 3</a>
+                </div>               
+            </div>
+            </div>-->            
+            <button onclick="openTab('contact-us')">Contact us</button>
+            <button onclick="openTab('about-us')">About us</button>
+        </div>
+
+        <!--Home page content-->
+        <div class="content" id="home">
+            <h2>Welcome to home page</h2>
+            <p>This is your home page</p>
+        </div>
+
+        <!--Services content-->
+        <div class="content" id="services">
+            <h2>Our services</h2>
+            <p>Explore service that we offer</p>
+        </div>
+
+        <!--Sub services contents-->
+        
+        <div class="content" id="service1">
+            <h2>Service 1</h2>
+            <p>Description of service 1</p>
+        </div>
+
+        <div class="content" id="service2">
+            <h2>Service 2</h2>
+            <p>Description of service 2</p>
+        </div>
+
+        <div class="content" id="service3">
+            <h2>Service 3</h2>
+            <p>Description of service 3</p>
+        </div>
+
+        <!--Contact us content-->
+        <div class="content" id="contact-us">
+            <h2>Contact Us</h2>
+           
+            <div class="contact-image-container" id="contact-image-container-id" data-tilt>
+                <img class="contact-image" id="contact-image-id" src="img-01.png" alt="img">
+            </div>
+            <form action="contact.php" method="post" enctype="text/plain">
+                
+                <!--<label for="name">Name:</label>-->
+                <input type="text" class="contact-name" name="name"  placeholder="Name" style="border-radius: 50px;" required><br><br>
+        
+                <!--<label for="email">Email:</label>-->
+                <input type="email" class="contact-email" id="email" name="email" placeholder="Email" style="border-radius: 50px;" required><br><br>
+        
+                <!--<label for="message">Message:</label><br>-->
+                <textarea id="message" class="contact-message" name="message" rows="4" placeholder="Message" style="border-radius: 10px;" required></textarea><br>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+
+        </div>
+
+        <!--About us content-->
+        <div class="content" id="about-us">
+            <h2>About us</h2>
+            <p>Learn more about our company and team</p>
+        </div>
+
+        
+
+        <!--JavaScript linking-->
+        <script src="script.js"></script>
+
+    </body>
+</html>

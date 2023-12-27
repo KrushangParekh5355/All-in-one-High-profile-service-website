@@ -1,0 +1,7 @@
+1) https://best.ca/services/maintenance-services
+2) https://www.mrhandyman.ca/commercial-services/small-businesses-large-corporate-offices/
+3) https://servicesroy.com/en//
+4) http://www.saxonfacility.com/services/
+5) https://codepen.io/knyttneve/pen/rNJxwGR (code for three dot option menu)
+6) https://codepen.io/ESR_IAs/pen/YzLrQgm (code for Home page content for different type of services)
+7) https://codepen.io/fadzrinmadu/pen/bGqrJjB (code for sample task bar)
